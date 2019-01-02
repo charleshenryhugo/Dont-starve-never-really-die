@@ -2,7 +2,7 @@
 
 In game `Don't starve`, the save-files get deleted if the player dies. This is quite annoying if, for example, you have survived for 100 days and suddenly get killed by a tentacle.
 
-Most solutions for this issue focus on backup files. Namely, backup files when you are still alive and recover them after you die. I tried these solutions for a while and finally `git` came to my mind.
+Most solutions for this issue focus on backup files. Namely, backup files when you are still alive and recover them if you die. I tried these solutions for a while and finally `git` came to my mind.
 
 ## save-files
 
@@ -30,10 +30,14 @@ git add .
 git commit "your message"
 ```
 
-recover the most recent archive if you got killed ( == Discard all changes since the last commit ):
+recover the most recent archive if you are killed ( == Discard all changes since the last commit ):
 
 ```
 git checkout ./
 ```
 
 There're much more you can do if you are familiar with `git`.
+
+## Author
+
+ZHU YUE
